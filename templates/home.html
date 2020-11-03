@@ -1,6 +1,81 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Stock Screener</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous">
+	  
+	 </script>
+	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+</head>
+<body>
+	<div class="ui container">
+	<h1>Stock Screener</h1>
 
-{% block content %}
-Hello this is the dashboard page.
-{% endblock %}
+	<i>Welcome to the stock screen checker.</i>
 
+	<br>
+	<br>
+	<div class="ui input">
+  		<input type="text" placeholder="Symbol">
+	</div>
+	<br>
+	<br>
+	<div class="ui input">
+  		<input type="text" placeholder="P/E Ratio">
+	</div>
+	<br>
+	<br>
+	<div class="ui input">
+  		<input type="text" placeholder="Divident Yield">
+	</div>
+	<br>
+	<br>
+
+	<div class="ui slider checkbox">
+  		<input type="checkbox" name="newsletter">
+  		<label>Above 50 days</label>
+	</div>
+
+	<div class="ui slider checkbox">
+  		<input type="checkbox" name="newsletter">
+  		<label>Above 200 days.</label>
+	</div>
+
+	<div class="ui animated button" tabindex="0">
+  	<div class="visible content">Enter</div>
+  	<div class="hidden content">
+    <i class="right arrow icon"></i>
+  	</div>
+	</div>
+
+	<table class="ui celled table">
+  <thead>
+    <tr><th>Symbol</th>
+    <th>P/E</th>
+    <th>Divident Yield</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td data-label="Name">INFY</td>
+      <td data-label="Age">23</td>
+      <td data-label="Job">10.2</td>
+    </tr>
+    <tr>
+      <td data-label="Name">TCS</td>
+      <td data-label="Age">12</td>
+      <td data-label="Job">2.5</td>
+    </tr>
+    <tr>
+      <td data-label="Name">MINDTREE</td>
+      <td data-label="Age">5.25</td>
+      <td data-label="Job">45</td>
+    </tr>
+  </tbody>
+</table>
+	</div>
+</body>
+</html>
