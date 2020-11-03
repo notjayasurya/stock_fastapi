@@ -11,7 +11,7 @@ def home(request: Request):
     Displays the stock screener on the dashboard/homescreen
     '''
 
-    return templates.TemplateResponse("home.html",{"request":request})
+    return templates.TemplateResponse("home.html",{"request":request,"somevar":2})
 
 @app.post('/stock')
 def create_stock():
